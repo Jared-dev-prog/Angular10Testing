@@ -46,7 +46,7 @@ export class EditComputerComponent {
       error: (err) => {
         this.onError = true;
 
-        alert('Ocurrió un error al cargar la infromación de la caomputadora');
+        alert('Hubo un error!!!');
       },
     });
   }
@@ -58,7 +58,7 @@ export class EditComputerComponent {
       },
       error: (err) => {
         this.onError = true;
-        alert('Ocurrió un error al actualizar');
+        alert('Error al actualizar!!!');
       },
     });
   }

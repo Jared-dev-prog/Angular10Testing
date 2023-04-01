@@ -229,7 +229,6 @@ describe('ComputersService', () => {
       expect(obs instanceof Observable).toBeTrue();
       obs.subscribe({
         next: (value) => {
-          console.log('Get by id', value);
           expect(value).toBeDefined();
           let computerResponse = value as Computer;
           expect(computerResponse.id).toBe(1);
