@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Test",
+      "age": 12
+    }
+  ],
+  "computers": [
+    {
+      "brand": "Lenovo2",
+      "model": "xhs",
+      "id": 2
+    },
+    {
+      "brand": "Lenovo5",
+      "model": "het",
+      "id": 4
+    }
+  ]
+}

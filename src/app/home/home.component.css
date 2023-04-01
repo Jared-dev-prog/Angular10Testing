@@ -1,0 +1,11 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.home-container h1 {
+  text-align: center;
+}
