@@ -65,18 +65,13 @@ describe('EditComputerComponent', () => {
     let mockResponse = {
       id: 1,
       brand: 'Lenovo',
-      model: '123ASD',
+      model: 'GxET',
     } as Computer;
     computerServiceSpy.getComputer.and.returnValue(of(mockResponse));
     component.loadData();
     expect(computerServiceSpy.getComputer).toHaveBeenCalled();
   });
-  it('should load data - error', () => {
-    let mockResponse = {
-      id: 1,
-      brand: 'Lenovo',
-      model: '123ASD',
-    } as Computer;
+  it('should load data with error', () => {
     computerServiceSpy.getComputer.and.returnValue(
       throwError(() => {
         'computer not found';
@@ -89,18 +84,14 @@ describe('EditComputerComponent', () => {
     let mockResponse = {
       id: 1,
       brand: 'Lenovo',
-      model: '123ASD',
+      model: 'GxET',
     } as Computer;
     computerServiceSpy.updateComputer.and.returnValue(of(mockResponse));
     component.updateComputer();
     expect(routerSpy.navigate).toHaveBeenCalledWith(['computers']);
   });
-  it('should update data - error', () => {
-    let mockResponse = {
-      id: 1,
-      brand: 'Lenovo',
-      model: '123ASD',
-    } as Computer;
+  it('should update data with error', () => {
+
     computerServiceSpy.updateComputer.and.returnValue(
       throwError(() => {
         'user not found';
