@@ -55,10 +55,10 @@ describe('EditComputerComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-    const params = { id: 1 };
-    activatedRouterSpy;
+    activatedRouterSpy.params = of({ id: 1 });
 
     component.initData();
+    expect(component.callOnInit).toBe(1);
   });
 
   it('should load data', () => {

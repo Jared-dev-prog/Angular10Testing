@@ -36,9 +36,6 @@ export class EditComputerComponent {
         this.loadData();
         this.callOnInit = 1;
       },
-      error: (err) => {
-        this.callOnInit = 2;
-      },
     });
   }
   loadData() {
